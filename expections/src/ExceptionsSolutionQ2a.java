@@ -1,3 +1,5 @@
+import java. util. *;
+import java. util. Scanner;
 public class ExceptionsSolutionQ2a
 {
    public static void main(String[] args)
@@ -8,6 +10,7 @@ public class ExceptionsSolutionQ2a
             int position = getPosition();
             display (someArray, position);
         }
+        //If any exception occurs during the execution of the try block, it is caught by the corresponding catch block.
         catch(NumberFormatException e)
         {
             System.out.println("Position should be an integer");
@@ -23,7 +26,7 @@ public class ExceptionsSolutionQ2a
     static int getPosition()
     {
 	System.out.print("Enter array position to display: ");
-	String positionEntered = EasyScanner.nextString(); // requires EasyScanner class
+	String positionEntered = EasyScannerPlus.nextString(); // requires EasyScanner class
 	return Integer.parseInt(positionEntered);
     }
     

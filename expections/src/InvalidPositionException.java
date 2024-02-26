@@ -1,13 +1,14 @@
 public class InvalidPositionException extends Exception
 {
-    	public InvalidPositionException() // constructor without parameter
+	// Constructor without parameters
+	public InvalidPositionException()
 	{
-		super("The number you enter should be 0, 1, 2 or 3");
+		super("The number you ente r should be 0, 1, 2 or 3"); // Calls the superclass constructor with a default error message
 	}
 
-	public InvalidPositionException(String message)// constructor with parameter
+	// Constructor with a parameter for custom error messages
+	public InvalidPositionException(String message)
 	{
-		super (message);
+		super(message); // Calls the superclass constructor with the provided error message
 	}
-
 }

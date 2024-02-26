@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/expections/expections.iml" filepath="$PROJECT_DIR$/expections/expections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/javaLabSessions.iml" filepath="$PROJECT_DIR$/javaLabSessions.iml" />
     </modules>
   </component>

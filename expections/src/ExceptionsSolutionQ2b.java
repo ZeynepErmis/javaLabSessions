@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ExceptionsSolutionQ2b
 {
    public static void main(String[] args)
@@ -12,15 +14,15 @@ public class ExceptionsSolutionQ2b
         {
             System.out.println("Position should be an integer");
         }
-               
+
         catch(ArrayIndexOutOfBoundsException e)
         {
             System.out.println("Position should be a number from 0 to 3");
         }
-        
+
         catch(Exception e)
         {
-            System.out.println(e.getStackTrace());
+            System.out.println(Arrays.toString(e.getStackTrace()));
         }
         
 	System.out.println("End of program" );
@@ -29,7 +31,7 @@ public class ExceptionsSolutionQ2b
     static int getPosition()
     {
 	System.out.print("Enter array position to display: ");
-	String positionEntered = EasyScanner.nextString(); // requires EasyScanner class
+	String positionEntered = EasyScannerPlus.nextString(); // requires EasyScanner class
 	return Integer.parseInt(positionEntered);
     }
     
