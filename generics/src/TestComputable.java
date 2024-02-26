@@ -6,6 +6,7 @@ public class TestComputable {
         printResult((x, y) -> x + y);
     }
     
+    
     // Method to print the result of the computable operation
     public static void printResult(Computable<Integer> compIn) {
         // Computing and printing the result of the operation with inputs 3 and 4
